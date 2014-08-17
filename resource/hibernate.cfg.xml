@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/crud_struts</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.connection.pool_size">30</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+		<mapping class="br.com.crud.abstractpo.AbstractPO" />
+		<mapping class="br.com.crud.cidade.model.CidadePO" />
+		<mapping class="br.com.crud.estado.model.EstadoPO" />
+		<mapping class="br.com.crud.fornecedor.model.FornecedorPO" />
+		<mapping class="br.com.crud.produto.model.ProdutoPO" />
+	
+	</session-factory>
+</hibernate-configuration>

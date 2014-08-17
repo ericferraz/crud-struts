@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+"http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<form-beans>
+		<!-- classe form -->
+		<form-bean name="categoriaForm" type="br.com.sistemaprodutos.categoria.struts.CategoriaForm" />
+		<form-bean name="produtoForm" type="br.com.sistemaprodutos.produto.struts.ProdutoForm" />
+	</form-beans>
+
+	<action-mappings>
+	<!-- mapea um filtro para restringir acesso  é só replicar depois para demais classes-->
+	<!-- nome da action -->	<action path="/restrito/categoriaAction" 
+		 type="br.com.sistemaprodutos.categoria.struts.CategoriaAction"
+		 name="categoriaForm"
+		 scope="session"
+		 parameter="method">
+		 
+		 <!-- quais páginas essa action irá manipular -->
+		 <forward name="abrir_categoria" path=".categoriaTILES" />
+		  <forward name="abrir_categoria_consulta" path=".categoriaConsultaTILES" />
+		 
+		</action>
+		
+		<!-- mapea um filtro para restringir acesso  é só replicar depois para demais classes-->
+		<action path="/restrito/produtoAction"
+		 type="br.com.sistemaprodutos.produto.struts.ProdutoAction"
+		 name="produtoForm"
+		 scope="session"
+		 parameter="method">
+		 
+		 <!-- quais páginas essa action irá manipular-->
+		 <forward name="abrir_produto" path=".produtoTILES" />
+		 
+		</action>
+		
+	</action-mappings>
+
+
+</struts-config>

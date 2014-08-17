@@ -1,0 +1,123 @@
+body{
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+ }
+ 
+ #corpo{
+  width:800px;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: left;
+ }
+ 
+ #menu{
+  width:800px;
+  height:36px;
+  background-color: #FFE4E1;
+ }
+ 
+ #menu ul li,a{
+  width: 100px;
+  height:35px;
+  display: inline-block;
+  text-align: center;
+  font: sans-serif;
+  font-size: 14pt;
+  text-decoration: none;
+ }
+ 
+ 
+ #menu ul li a:hover{
+  background-color: #EEE8AA;
+ }
+ 
+ #conteudo{
+  width:798px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #FFFFE0;
+  border:1px solid #ccc;
+ }
+ 
+#conteudo form{
+ width: 700px;
+ height:auto;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+ 
+ form td input{
+ width: 200px;
+ height:20px;
+ margin: 6px;
+}
+
+form td select{
+ width: 200px;
+ height:26px;
+ margin: 6px;	
+}
+
+ #p{
+ width: 100px;
+ height:20px;
+ margin: 6px;
+}
+
+#m{
+ width: 200px;
+ height:20px;
+ margin: 6px;
+}
+
+#g{
+ width: 300px;
+ height:20px;
+ margin: 6px;
+}
+
+#gg{
+ width: 400px;
+ height:20px;
+ margin: 6px;
+}
+
+#ggg{
+ width: 500px;
+ height:20px;
+ margin: 6px;
+}
+
+#gggg{
+ width: 600px;
+ height:20px;
+ margin: 6px;
+}
+
+.botao{
+  width: 100px;
+  height: 35px;
+  border-radius:5px;
+}
+
+.botao:hover{
+ background-color: #CAFF70;
+ cursor: pointer;
+}
+
+.verde{
+ background-color: #00FF7F;
+}
+
+.vermelho{
+ background-color:#FF0000; 
+}
+
+.azul{
+ background-color: #00BFFF;
+}
+
+.cinza{
+ background-color: #FFE7BA;
+}
